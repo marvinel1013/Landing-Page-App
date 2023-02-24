@@ -29,9 +29,9 @@ function Pricing() {
             <div className="bg-secondary text-center text-gray-300 text-lg p-3">
               {price.title}
             </div>
-            <div className="p-8 text-gray-500 text-xl flex flex-col gap-8 md:gap-10">
-              <h2 className="text-2xl text-gray-700 font-bold">
-                <span className="text-gray-900 text-6xl font-bold">
+            <div className="p-8 text-gray-500 text-lg md:text-xl flex flex-col gap-8 md:gap-10">
+              <h2 className="md:text-2xl text-lg text-gray-700 font-bold">
+                <span className="text-gray-900 text-4xl md:text-6xl font-bold">
                   {price.price}
                 </span>
                 /mo
