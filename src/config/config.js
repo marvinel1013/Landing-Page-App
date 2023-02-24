@@ -80,3 +80,16 @@ export const aboutCardData = [
     description: "Free With Sign Up",
   },
 ];
+
+export const pricingData = [
+  {
+    id: 1,
+    title: "HOBBY",
+    price: "₱2,999",
+  },
+  {
+    id: 2,
+    title: "GROWTH",
+    price: "₱3,999",
+  },
+];

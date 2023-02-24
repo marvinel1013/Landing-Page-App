@@ -5,7 +5,7 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <div className="grid grid-rows-[80px_auto_200px]">
+    <div className="grid grid-rows-[80px_auto_300px]">
       {/* NavBar Layout */}
       <div>
         <NavBar />
@@ -17,7 +17,7 @@ function App() {
       </div>
 
       {/* Footer Layout */}
-      <div className="bg-blue-300">
+      <div>
         <Footer />
       </div>
     </div>

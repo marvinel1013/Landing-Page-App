@@ -1,7 +1,7 @@
 import React from "react";
 
 function AppButton(props) {
-  const { title, onClick, className } = props;
+  const { title, className } = props;
   return (
     <button
       className={
@@ -9,7 +9,9 @@ function AppButton(props) {
         " " +
         className
       }
-      onClick={onClick}
+      onClick={() =>
+        alert("No Functionality this is for Educational Purposes only")
+      }
     >
       {title}
     </button>
