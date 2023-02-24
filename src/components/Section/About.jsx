@@ -3,8 +3,8 @@ import { aboutCardData } from "../../config/config";
 
 function About() {
   return (
-    <div className="min-h-screen w-full bg-gray-900 p-16">
-      <div className="flex flex-col items-center">
+    <div className="min-h-screen w-full bg-gray-900 py-16 p-5 md:p-16">
+      <div className="flex flex-col w-full items-center">
         <h1 className="text-5xl font-extrabold text-gray-100 text-center">
           By <span className="text-primary">Developers</span> for{" "}
           <span className="text-primary">Developers</span>
