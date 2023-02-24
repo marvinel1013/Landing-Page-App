@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png";
 import AppButton from "../components/button/AppButton";
 import { links } from "../config/config";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Menu from "../components/Menu/Menu";
+import { Link } from "react-scroll";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,9 @@ function NavBar() {
         {/* LOGO Section */}
 
         <h1 className=" font-extrabold text-3xl duration-300 hover:text-primary cursor-pointer">
-          marvineL
+          <Link to="home" duration={500} smooth={true}>
+            marvineL
+          </Link>
         </h1>
 
         {/* Links Section */}
@@ -27,7 +29,9 @@ function NavBar() {
               key={id}
               className=" capitalize cursor-pointer hover:text-primary duration-300 hover:scale-105"
             >
-              {link}
+              <Link to={link} smooth={true} duration={500}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

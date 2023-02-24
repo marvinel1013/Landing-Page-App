@@ -3,6 +3,7 @@ import { MdClose } from "react-icons/md";
 import AppButton from "../button/AppButton";
 import { links } from "../../config/config";
 import { FaFacebook, FaTwitch, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function Menu(props) {
   const { menuOpen, toggleMenu } = props;
@@ -41,11 +42,10 @@ function Menu(props) {
         }
       >
         <div className="flex items-center justify-between">
-          <h1
-            onClick={toggleMenu}
-            className=" font-extrabold text-2xl cursor-pointer"
-          >
-            marvineL
+          <h1 className=" font-extrabold text-2xl cursor-pointer">
+            <Link to="home" smooth={true} duration={500} onClick={toggleMenu}>
+              marvineL
+            </Link>
           </h1>
           <span className=" cursor-pointer" onClick={toggleMenu}>
             <MdClose size={28} />
@@ -62,7 +62,9 @@ function Menu(props) {
               key={id}
               className="capitalize tracking-wider text-xl cursor-pointer font-semibold"
             >
-              {link}
+              <Link to={link} smooth={true} duration={500} onClick={toggleMenu}>
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
