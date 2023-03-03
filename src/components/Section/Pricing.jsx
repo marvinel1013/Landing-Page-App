@@ -7,10 +7,18 @@ function Pricing() {
   return (
     <div className="min-h-screen w-full bg-gray-900 p-5 md:p-10 flex flex-col items-center">
       <div className="mt-16 text-center md:px-18">
-        <h1 className="md:text-5xl text-4xl font-extrabold tracking-wide text-gray-100">
+        <h1
+          className="md:text-5xl text-4xl font-extrabold tracking-wide text-gray-100"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
           Pricing
         </h1>
-        <p className="text-lg text-gray-500 mt-12">
+        <p
+          className="text-lg text-gray-500 mt-12"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
           quibusdam debitis quas et commodi cupiditate distinctio pariatur eius
           quis minima nam, nemo unde aperiam repudiandae deserunt ratione. At,
@@ -23,6 +31,8 @@ function Pricing() {
       <div className="grid md:grid-cols-2 gap-12 md:px-20 px-5 mb-10 mt-28">
         {pricingData.map((price) => (
           <div
+            data-aos="flip-right"
+            data-aos-delay="400"
             key={price.id}
             className="bg-slate-100 rounded-xl overflow-hidden"
           >

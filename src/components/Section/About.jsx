@@ -5,11 +5,19 @@ function About() {
   return (
     <div className="min-h-screen w-full bg-gray-900 py-16 p-5 md:p-16">
       <div className="flex flex-col w-full items-center">
-        <h1 className="text-5xl font-extrabold text-gray-100 text-center">
+        <h1
+          className="text-5xl font-extrabold text-gray-100 text-center"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
           By <span className="text-primary">Developers</span> for{" "}
           <span className="text-primary">Developers</span>
         </h1>
-        <p className="text-center text-lg text-gray-500 mt-16">
+        <p
+          className="text-center text-lg text-gray-500 mt-16"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           praesentium non, aliquid maxime quidem reiciendis eaque facere eum
           porro voluptas aut dolorum repellat ratione libero ipsa, modi dolorem
@@ -17,7 +25,11 @@ function About() {
         </p>
 
         {/* Cards */}
-        <div className="mt-16 grid md:grid-cols-2 gap-12 gap-x-[270px]">
+        <div
+          className="mt-16 grid md:grid-cols-2 gap-12 gap-x-[270px]"
+          data-aos="zoom-in-up"
+          data-aos-delay="400"
+        >
           {aboutCardData.map((about) => (
             <div
               key={about.id}

@@ -27,6 +27,8 @@ function Footer() {
         <ul className="grid grid-cols-2 gap-10">
           {icons.map(({ id, icon }) => (
             <li
+              data-aos="zoom-out-down"
+              data-aos-delay="400"
               key={id}
               className="p-4 flex justify-center rounded-md shadow-md shadow-primary cursor-pointer text-gray-100 duration-300 hover:scale-105"
             >
@@ -36,10 +38,18 @@ function Footer() {
         </ul>
       </div>
       <div className="h-full w-full flex flex-col gap-10">
-        <h1 className="font-semibold text-primary text-center md:text-start text-lg md:text-xl">
+        <h1
+          className="font-semibold text-primary text-center md:text-start text-lg md:text-xl"
+          data-aos="fade-down"
+          data-aos-delay="400"
+        >
           SUBSCRIBE TO OUR NEWSLETTER
         </h1>
-        <div className="flex flex-col md:flex-row items-center gap-5">
+        <div
+          className="flex flex-col md:flex-row items-center gap-5"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <input
             type="text"
             placeholder="Daily newsletter..."
